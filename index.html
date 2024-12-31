@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak's Video Hub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Zak's Video Hub</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#my-videos">My Videos</a>
+        <a href="#upload">Upload Video</a>
+    </div>
+    <div class="content">
+        <div class="upload-section" id="upload">
+            <h2>Upload Your Video</h2>
+            <form id="uploadForm">
+                <input type="file" id="videoFile" accept="video/*"><br>
+                <button type="button" onclick="handleUpload()">Upload</button>
+            </form>
+        </div>
+
+        <h2>My Videos</h2>
+        <div id="videoGallery">
+            <!-- Videos will be dynamically added here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Zak's Video Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
